@@ -1,0 +1,141 @@
+html, body {
+      position: relative;
+      height: 100vh;
+      width: 100vw;
+    }
+    body {
+      background:#FCF9F1;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size:1000px;
+      color:#4C4C4C;
+      margin: 0;
+      padding: 0;
+    }
+
+.scroll-down-button  {
+        bottom: 25px;
+        color: #3555ff;
+        display: flex;
+  justify-content: center;
+        height: auto;
+        left: 45%;
+  right: auto;
+        opacity: 1;
+        padding: 0;
+        position: absolute;
+        width: 200px;
+        z-index: 100;
+  background: #333333;
+}
+
+.swiper-container {
+    width: 100%;
+  	height: 100vh;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #FCF9F1;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  height: 100vh;
+}
+
+
+.top-right {
+  position: absolute;
+  top: 70px;
+  right: 100px;
+    color:#4C4C4C;
+    font-size:50px;
+ 
+}
+
+
+
+.bottom-left {
+  position: absolute;
+  bottom:100px;
+  left: 100px;
+}
+
+
+
+
+.bottom-left2 {
+  position: absolute;
+bottom: -800px;
+  left: 100px;
+    color: white;
+    font-size:50px;
+}
+
+
+
+
+
+.bottom-right {
+  position: absolute;
+  bottom: -885px;
+  right: 100px;
+  
+}
+
+
+.top-left1 {
+  position: absolute;
+  top: 5px;
+  left: 50px;
+  font-size:70px;
+}
+
+
+
+.bottom-right1 {
+  position: absolute;
+  bottom: 8px;
+  right:25px;
+  font-size:70px;
+  
+}
+
+  
+.centered1 {
+  position: absolute;
+  bottom:-390%;
+  left: 50%;
+  font-size:50px;
+    color: white;
+  transform: translate(-50%, -50%);
+    
+}
+
+
+.bottom-left3 {
+  position: absolute;
+bottom: -2000px;
+  left: 100px;
+    color: #4C4C4C;
+    font-size:50px;
+}
+
+
+.bottom-left4 {
+  position: absolute;
+  bottom:-5px;
+  left: 100px;
+}
+
+

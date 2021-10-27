@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="http://fonts.googleapis.com/css?family=PT+Sans:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Resource style -->
+    <script src="js/modernizr.js"></script>
+    <!-- Modernizr -->
+
+    <title>THE MUSIC ROOM</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .container {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    /* Centered text */
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2.5em;
+      font-weight: bolder;
+      width: 100%;
+    }
+
+    .header {
+      text-align: center;
+      padding: 32px;
+    }
+
+    .row {
+      display: -ms-flexbox;
+      /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap;
+      /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+      align-items: baseline;
+      padding: 60px;
+    }
+
+    /* Create four equal columns that sits next to each other */
+    .column {
+      -ms-flex: 40%;
+      /* IE10 */
+      flex: 40%;
+      max-width: 40%;
+      padding: 0 4px;
+      cursor: pointer;
+    }
+
+    .column-text {
+      display: flex;
+      max-width: 20%;
+      height: 100%;
+      flex-direction: column;
+    }
+
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+
+    #imageGaleryContainer {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .icon {
+      margin-top: 50px;
+    }
+
+    .overlay i {
+      font-size: 1em;
+    }
+
+    .column-text :first-child {
+      font-size: 3em;
+      margin-bottom: 2em;
+    }
+
+    .column-text :last-child {
+      margin-bottom: 2em;
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      background: rgba(65, 65, 65, 0.5);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      opacity: 1;
+      min-height: 98.5%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5em;
+      font-weight: bolder;
+      width: 100%;
+      flex-direction: column;
+    }
+  </style>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html" class="btn">
+          <img src="images/logobleu1.png" alt="" width="50px; height=50px;"
+        /></a>
+      </div>
+    </header>
+    <nav>
+      <ul class="cd-primary-nav">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="mymusic.html">My Music</a></li>
+        <li><a href="index.html">Logout</a></li>
+      </ul>
+    </nav>
+
+    <article class="row" id="column-container">
+      <div class="column column-text">
+        <p>Tell us what you're planning and we'll suggest the music</p>
+        <p>
+          Can’t find what you’re looking for? <br />Come back soon<br />
+          we’re adding new content every day
+        </p>
+      </div>
+      <div class="column" id="second-column"></div>
+      <div class="column" id="third-column"></div>
+    </article>
+
+    <div class="cd-overlay-nav">
+      <span></span>
+    </div>
+    <div class="cd-overlay-content">
+      <span></span>
+    </div>
+    <a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/velocity.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="module" src="./js/homepage.js"></script>
+  </body>
+</html>

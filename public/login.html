@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="login.css" />
+    <meta charset="UTF-8" />
+    <title>Animated Login Page</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./snackbar.css" />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="left-section">
+        <br />
+        <a href="index.html" class="btn"
+          ><img
+            border="0"
+            src="images/logobleu1.png"
+            alt=""
+            width="50"
+            height="50"
+        /></a>
+        <br />
+        <div class="header">
+          <br /><br />
+          <h1 class="animation a1">LOGIN</h1>
+          <h4 class="animation a2">
+            Log in for entering your membership dashboard.
+          </h4>
+        </div>
+        <div id="formContainer">
+          <form action="" id="login">
+            <input
+              type="text"
+              class="form-field animation a3"
+              placeholder="Username"
+              id="username"
+              required
+            />
+            <input
+              type="password"
+              class="form-field animation a4"
+              id="password"
+              placeholder="Password"
+              required
+            />
+            <p class="animation a5">
+              <a href="fogot.html" class="btn">Forgot Password</a>
+            </p>
+            <button class="animation a6 pointer" type="submit" id="btn">
+              LOGIN HERE
+            </button>
+          </form>
+          <button
+            class="animation a7 pointer"
+            value="REGISTER"
+            onclick="location.href = 'register.html';"
+          >
+            REGISTER HERE
+          </button>
+        </div>
+      </div>
+      <div class="right-section"></div>
+      <div id="snackbar"></div>
+    </div>
+    <script type="module" src="./js/login.js"></script>
+  </body>
+</html>

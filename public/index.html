@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>THE MUSIC ROOM</title>
+  </head>
+
+  <body class="container flex-height-grow">
+    <video
+      id="background-video"
+      autoplay
+      loop
+      muted
+      poster="https://assets.codepen.io/6093409/river.jpg"
+    >
+      <source src="video/mp4.mp4" type="video/mp4" />
+    </video>
+    <section class="home-section">
+      <div class="tex-section">
+        <a href="welcome.html" class="btn"
+          ><img class="image" src="images/logobleu1.png"
+        /></a>
+      </div>
+    </section>
+    <script>
+      var video = document.getElementById("myVideo");
+      var btn = document.getElementById("myBtn");
+
+      function myFunction() {
+        if (video.paused) {
+          video.play();
+          btn.innerHTML = "Pause";
+        } else {
+          video.pause();
+          btn.innerHTML = "Play";
+        }
+      }
+    </script>
+  </body>
+</html>
